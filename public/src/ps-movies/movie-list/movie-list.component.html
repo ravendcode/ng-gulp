@@ -1,0 +1,33 @@
+<div class="movie-list">
+  <h3>{{vm.message}}</h3>
+  <input type="text" ng-model="vm.message">
+  <button ng-click="vm.changeMessage()">Change message</button>
+  <br><br>
+  <table class="table">
+    <tr>
+      <th>Title</th>
+      <th>Length</th>
+      <th>Rating</th>
+      <th></th>
+    </tr>
+    <tr ng-repeat="movie in vm.movies">
+      <td>{{movie.title}}</td>
+      <td>{{movie.length}}</td>
+      <td>
+        <movie-rating value="movie.rating">
+          <span class="glyphicon glyphicon-star"></span>
+        </movie-rating>
+      </td>
+      <td>
+        <div class="btn-group">
+          <button class="btn btn-default" ng-click="vm.upRating(movie)" ng-disabled="movie.rating===5">
+            <span class="glyphicon glyphicon-plus"></span>
+          </button>
+          <button class="btn btn-default" ng-click="vm.downRating(movie)" ng-disabled="movie.rating===1">
+            <span class="glyphicon glyphicon-minus"></span>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
