@@ -6684,8 +6684,6 @@ button.close {
   }
 }
 
-
-
 :root {
   --main-bg-color: lightpink;
 }
@@ -6693,6 +6691,8 @@ button.close {
 h1 {
   background-color: var(--main-bg-color, darkblue);
 }
+
+
 
 .movie-rating .glyphicon-star {
   color: gold;

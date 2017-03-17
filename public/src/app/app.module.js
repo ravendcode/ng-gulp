@@ -8,6 +8,6 @@ export default angular
   .component('app', {
     controllerAs: 'vm',
     controller: AppComponent,
-    templateUrl: '/app/app/app.component.html',
+    templateUrl: '/views/app/app/app.component.html',
   })
   .name;

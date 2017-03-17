@@ -64,7 +64,7 @@ gulp.task('json', () => {
 
 gulp.task('components', () => {
   return gulp.src(srcDir + '/**/*.component.html')
-    .pipe(gulp.dest(distDir))
+    .pipe(gulp.dest(distDir + '/views'))
     .pipe(browserSync.stream());
 });
 

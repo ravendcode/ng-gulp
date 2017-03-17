@@ -7,12 +7,12 @@ export default angular
   .module('index.app.ps-movies', [])
   // .config(routing)
   .component('movieList', {
-    templateUrl: '/ps-movies/movie-list/movie-list.component.html',
+    templateUrl: '/views/ps-movies/movie-list/movie-list.component.html',
     controllerAs: 'vm',
     controller: MovieListComponent,
   })
   .component('movieRating', {
-    templateUrl: '/ps-movies/movie-rating/movie-rating.component.html',
+    templateUrl: '/views/ps-movies/movie-rating/movie-rating.component.html',
     bindings: {
       value: '<',
     },
