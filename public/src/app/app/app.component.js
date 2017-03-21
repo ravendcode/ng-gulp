@@ -1,6 +1,6 @@
 export default class AppComponent {
-    constructor() {
+  constructor() {
 
-    }
+  }
 }
 AppComponent.$$ngIsClass = true;

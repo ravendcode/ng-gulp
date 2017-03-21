@@ -6692,6 +6692,11 @@ h1 {
   background-color: var(--main-bg-color, darkblue);
 }
 
+.active {
+  color: red;
+  font-weight: bolder;
+}
+
 
 
 .movie-rating .glyphicon-star {
